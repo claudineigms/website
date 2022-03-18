@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: linear-gradient(150deg,blue,black);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    border-radius: 15px;
+    box-shadow:4px 4px 4px black;
+    margin: 60px;
+}
+
+.nome{
+    margin: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .perfil_topo{
+    display:flex;
+    align-items: center;
+}
+
+header .perfil_baixo{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.mudar_tema button{
+    border-radius: 15px;
+    font-size: 15px;
+    height: 50px;
+    background-color: #1B1B1B;
+    border-color: darkgray;
+    color: white;
+    padding: 8px 16px;
+}
+
+.rede{
+    width: 45px;
+    border-radius: 275px;
+}
+
+.eu{
+    border-radius: 275px;
+    width: 175px;
+    margin:15px;
+    box-shadow: 3px 3px 3px black;
+}
+
+.projetos{
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    background-image: linear-gradient(30deg,rgb(68, 68, 68),rgb(59, 59, 59));
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 5px 5px 5px black;
+    list-style: none;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.projetos-item{
+    list-style-type: none;
+    font-size: 25;
+    line-height: 40px;
+}
+
+.projetos-item a{
+    color: #1E1E83;
+    text-decoration: none
+}
+
+.white {
+    background: linear-gradient(150deg,rgb(0, 162, 255),blue);
+}
+
+.white .container{
+    background-color: white;
+    color: black;
+}
+
+.white .projetos{
+    background-image: linear-gradient(30deg,rgb(219, 216, 216),rgb(180, 180, 180));
+    color: black;
+}
+
+.white button{
+    background-color: white;
+    color: black;
+    border-color: gray;
+}
