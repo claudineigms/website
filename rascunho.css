@@ -5,7 +5,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.back_container{
     background-color: rgb(41, 41, 41);
     color: white;
     border-radius: 15px;
@@ -13,8 +13,16 @@ body{
     margin: 60px;
 }
 
+.container{
+    margin: 10px;
+}
+
 .nome{
     margin: 15px;
+}
+
+h5{
+    margin-top: -20px;
 }
 
 header{
@@ -25,6 +33,7 @@ header{
 header .perfil_topo{
     display:flex;
     align-items: center;
+    align-items: flex-end;
 }
 
 header .perfil_baixo{
@@ -35,14 +44,16 @@ header .perfil_baixo{
     margin: 15px;
 }
 
+
 .mudar_tema button{
-    border-radius: 15px;
+    border-radius: 275px;
     font-size: 15px;
     height: 50px;
-    background-color: #1B1B1B;
-    border-color: darkgray;
-    color: white;
-    padding: 8px 16px;
+    width: auto;
+    background-color: white;
+    border-color: rgb(77, 77, 77);
+    color: black;
+    padding: 8px 50px;
 }
 
 .rede{
@@ -51,17 +62,19 @@ header .perfil_baixo{
 }
 
 .eu{
-    border-radius: 275px;
-    width: 175px;
+    display: block;
+    width: 195px;
     margin:15px;
-    box-shadow: 3px 3px 3px black;
+    margin: top 40px;
 }
 
 .projetos{
     color: rgb(255, 255, 255);
     border-radius: 15px;
+    border-top-left-radius: 0px;
     background-image: linear-gradient(30deg,rgb(68, 68, 68),rgb(59, 59, 59));
     margin: 15px;
+    margin-top: -15px;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -91,13 +104,18 @@ header .perfil_baixo{
     color: black;
 }
 
+.white .back_container{
+    background-color: white;
+    color: black;
+}
+
 .white .projetos{
     background-image: linear-gradient(30deg,rgb(219, 216, 216),rgb(180, 180, 180));
     color: black;
 }
 
 .white button{
-    background-color: white;
-    color: black;
-    border-color: gray;
+    background-color: black;
+    color: white;
+    border-color: rgb(58, 58, 58);
 }
