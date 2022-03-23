@@ -17,6 +17,7 @@ body{
     margin: 10px;
 }
 
+
 .nome{
     margin: 15px;
 }
@@ -44,7 +45,6 @@ header .perfil_baixo{
     margin: 15px;
 }
 
-
 .mudar_tema button{
     border-radius: 275px;
     font-size: 15px;
@@ -68,10 +68,32 @@ header .perfil_baixo{
     margin: top 40px;
 }
 
+.conteudos{
+    display: flex;
+    justify-content: space-between;
+}
+
 .projetos{
     color: rgb(255, 255, 255);
     border-radius: 15px;
     border-top-left-radius: 0px;
+    background-image: linear-gradient(30deg,rgb(68, 68, 68),rgb(59, 59, 59));
+    margin: 15px;
+    margin-top: -15px;
+    margin-right: -10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 5px 5px 5px black;
+    list-style: none;
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+}
+
+.tecnologia{
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
     background-image: linear-gradient(30deg,rgb(68, 68, 68),rgb(59, 59, 59));
     margin: 15px;
     margin-top: -15px;
@@ -81,7 +103,8 @@ header .perfil_baixo{
     box-shadow: 5px 5px 5px black;
     list-style: none;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
+    align-items: flex-end;
 }
 
 .projetos-item{
@@ -109,13 +132,26 @@ header .perfil_baixo{
     color: black;
 }
 
-.white .projetos{
+.white .projetos {
     background-image: linear-gradient(30deg,rgb(219, 216, 216),rgb(180, 180, 180));
+    color: black;
+}
+
+.white .projetos-item a {
+    color: black;
+}
+
+.white .tecnologia {
+    background-image: linear-gradient(30deg,rgb(219, 216, 216),rgb(180, 180, 180));
+    color: black;
+}
+
+.white .tecnologia a {
     color: black;
 }
 
 .white button{
     background-color: black;
-    color: white;
+    color: rgb(255, 255, 255);
     border-color: rgb(58, 58, 58);
 }
