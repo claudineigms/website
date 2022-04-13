@@ -99,7 +99,6 @@ header .perfil_baixo{
     padding: 30px;
     box-shadow: 5px 5px 5px black;
     list-style: none;
-    font-weight: 700;
     font-size: 36px;
     width: 100%;
 }
@@ -157,7 +156,7 @@ header .perfil_baixo{
 }
 
 .white .back_container{
-    background-color: white;
+    background-color: ;
     color: black;
 }
 
