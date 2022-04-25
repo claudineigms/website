@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body{
-    background: linear-gradient(150deg,blue,black);
+    background: linear-gradient(141deg, #0000ff, #000000);
+    background-size: 400% 400%;
     font-family: 'Roboto', sans-serif;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:7% 0%}
+    50%{background-position:94% 100%}
+    100%{background-position:7% 0%}
 }
 
 .back_container{
@@ -147,7 +168,13 @@ header .perfil_baixo{
 }
 
 .white {
-    background: linear-gradient(150deg,rgb(0, 68, 255),rgb(151, 151, 255));
+    background: linear-gradient(141deg, rgb(0, 68, 255),rgb(151, 151, 255));
+    background-size: 400% 400%;
+    font-family: 'Roboto', sans-serif;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
 }
 
 .white .container{
