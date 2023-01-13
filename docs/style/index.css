@@ -4,7 +4,8 @@
 
 header{
     width: 100%;
-    background-color: rgb(44, 44, 71);
+    /* background-color: rgb(44, 44, 71); */
+    background-color: #0D1C26;
     color: white;
 }
 
@@ -17,26 +18,38 @@ h3{
     font-family:SatoshiRegular;
 }
 
+.BoxPortfolio{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -15px;
+    
+}
+
+.BoxPortfolio h3{
+    background-color: #6B98BF;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 2px;
+    border-color: #1F3140;
+}
+
 /* mobile */
 @media (max-width: 615px) {        
- 
+
     .profile{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        gap: 10px;
     }
      
     .image{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .description{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
     }
 
     .eu{
@@ -49,6 +62,12 @@ h3{
     .conteudo{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        padding-bottom: 5px;
     }
     
     .redesSociais{
@@ -57,6 +76,7 @@ h3{
         justify-content: center;
         padding-top: 10px;
         gap: 10px;
+        padding-bottom: 15px;
     }
     
     .rede{
@@ -67,7 +87,6 @@ h3{
     h1{
         margin: 5px;
     }
-
 }
 
 
@@ -79,7 +98,7 @@ h3{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .image{
@@ -93,13 +112,19 @@ h3{
         border-radius: 100px;
         align-items: center;
     }
+
+    .description{
+        gap: 10px;
+    }
     
     .conteudo{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 100%;
-
+        width: 100%;
+        gap: 15px;
+        
     }
     
     .redesSociais{
