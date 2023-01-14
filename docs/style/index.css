@@ -4,7 +4,6 @@
 
 header{
     width: 100%;
-    /* background-color: rgb(44, 44, 71); */
     background-color: #0D1C26;
     color: white;
 }
@@ -16,6 +15,37 @@ h1{
 h3{
     font-size: 20px;
     font-family:SatoshiRegular;
+}
+
+.redesSociais{
+    margin-top: 10px;
+    color: white;
+}
+
+.github:hover{
+    margin-top: -100px; 
+    transition: 1s ease-in-out;
+    color: rgb(42, 42, 81);
+}
+
+.instagram:hover{
+    margin-top: -100px; 
+    transition: 1s ease-in-out;
+    color: #dd2a7b;
+}
+
+.linkedln:hover{
+    margin-top: -100px; 
+    transition: 1s ease-in-out;
+    color: #0e76a8;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 125px;
+    padding: 5px;
 }
 
 .BoxPortfolio{
@@ -33,6 +63,71 @@ h3{
     border-radius: 7px;
     border-width: 2px;
     border-color: #1F3140;
+}
+
+.mid{
+    background-color: #b9b9b9;
+    width: 100%;
+    position:absolute;
+    top:150px;
+}
+
+.botton{
+    background-color: #b9b9b9;
+    margin-top: 15px;
+    height: 100%;
+}
+
+
+.projeto{
+    margin: 5px;
+    color: white;
+    background-color: rgb(31, 49, 64);
+    border-top: 4px solid #fdfac3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dados{
+    margin: 5px;
+    color: white;
+    background-color: rgb(31, 49, 64);
+    border-top: 4px solid #fdfac3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: min-content;
+}
+
+ul{
+    list-style:none;
+    padding-left:0;
+}
+
+li{
+    margin-left: 20px;
+}
+
+.botton h2{
+    font-size: 25px;
+}
+
+.botton h3{
+    font-size: 20px;
+    font-family:SatoshiRegular;
+}
+
+.botton h4{
+    font-size: 15px;
+    font-family:SatoshiRegular;
+}
+
+.botton li{
+    font-size: 20px;
+    font-family:SatoshiRegular;
+}
+
+.tecnologias{
+    margin: 10px;
 }
 
 /* mobile */
@@ -75,17 +170,46 @@ h3{
         display: flex;
         justify-content: center;
         padding-top: 10px;
+        margin-top:10px;
+        margin-bottom: 15px;
         gap: 10px;
-        padding-bottom: 15px;
-    }
-    
-    .rede{
-        width: 45px;
-        border-radius: 150px;
     }
 
+    .github{
+        font-size: 38px;
+        color: white
+    }
+
+    .instagram{
+        font-size: 35px;
+        color: white
+    }
+
+    .linkedln{
+        font-size: 38px;
+        color: white
+    }
+    
     h1{
         margin: 5px;
+    }
+
+    .mid{
+        margin-top: 325px;
+    }
+
+    .botton{
+        display: grid;
+    }
+
+    .portfolio{
+        order: 2;
+        width: 100%;
+    }
+
+    .dados{
+        order: 1;
+        width: 99%;
     }
 }
 
@@ -93,12 +217,16 @@ h3{
 /* Desktop */
 @media (min-width: 615px) {        
  
+    .mid{
+        margin-top: 70px;
+    }
 
     .profile{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+        gap: 10px;
     }
 
     .image{
@@ -124,17 +252,50 @@ h3{
         height: 100%;
         width: 100%;
         gap: 15px;
+        padding-bottom: 10px;
         
     }
     
     .redesSociais{
         display: flex;
-        align-items: flex-end;
+        flex-direction: row;
+        padding-top: 10px;
+        margin-top: 10px;
         gap: 5px;
     }
     
-    .rede{
-        width: 25px;
-        border-radius: 100px;
+    .github{
+        font-size: 30px;
+        color: white
     }
+
+    .instagram{
+        font-size: 29px;
+        color: white
+    }
+
+    .linkedln{
+        font-size: 32px;
+        color: white
+    }
+
+    .portfolio{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: min-content;
+    }
+
+    .botton{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .portfolio{
+        width: 66.66%;
+    }
+
+    .dados{
+        width: 33.33%;
+    }
+
 }
