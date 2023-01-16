@@ -6,6 +6,9 @@ header{
     width: 100%;
     background-color: #0D1C26;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
@@ -18,25 +21,22 @@ h3{
 }
 
 .redesSociais{
-    margin-top: 10px;
     color: white;
 }
 
+.github:hover, .instagram:hover, .linkedln:hover{
+    transform: translateY(-10px);
+}
+
 .github:hover{
-    margin-top: -100px; 
-    transition: 1s ease-in-out;
     color: rgb(42, 42, 81);
 }
 
 .instagram:hover{
-    margin-top: -100px; 
-    transition: 1s ease-in-out;
     color: #dd2a7b;
 }
 
 .linkedln:hover{
-    margin-top: -100px; 
-    transition: 1s ease-in-out;
     color: #0e76a8;
 }
 
@@ -44,8 +44,13 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 7px;
-    height: 125px;
     padding: 5px;
+    transition: 0.5s all ease-in-out;
+}
+
+.projeto:hover{
+    transform: scale(1.03);
+    color: #58a6ff;
 }
 
 .BoxPortfolio{
@@ -169,8 +174,6 @@ li{
         width: 100%;
         display: flex;
         justify-content: center;
-        padding-top: 10px;
-        margin-top:10px;
         margin-bottom: 15px;
         gap: 10px;
     }
@@ -223,9 +226,10 @@ li{
 
     .profile{
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
+        
+        flex-direction: row;
         gap: 10px;
     }
 
@@ -259,30 +263,32 @@ li{
     .redesSociais{
         display: flex;
         flex-direction: row;
-        padding-top: 10px;
-        margin-top: 10px;
         gap: 5px;
     }
     
     .github{
         font-size: 30px;
-        color: white
+        color: white;
+        transition: 1s ease-in-out;
     }
 
     .instagram{
         font-size: 29px;
-        color: white
+        color: white;
+        transition: 1s ease-in-out;
     }
 
     .linkedln{
         font-size: 32px;
-        color: white
+        color: white;
+        transition: 1s ease-in-out;
     }
 
     .portfolio{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: min-content;
+
     }
 
     .botton{
@@ -292,6 +298,11 @@ li{
 
     .portfolio{
         width: 66.66%;
+    }
+    
+    .projeto{
+        height: 100%;
+        max-height: 200px;
     }
 
     .dados{
