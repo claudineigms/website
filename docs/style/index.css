@@ -198,11 +198,13 @@ li{
     }
 
     .mid{
-        margin-top: 325px;
+        margin-top: 305px;
     }
 
     .botton{
+        margin-top: 17px;
         display: grid;
+        grid-template-rows: min-content;
     }
 
     .portfolio{
@@ -212,7 +214,6 @@ li{
 
     .dados{
         order: 1;
-        width: 99%;
     }
 }
 
@@ -228,7 +229,6 @@ li{
         display: flex;
         justify-content: center;
         align-items: center;
-        
         flex-direction: row;
         gap: 10px;
     }
