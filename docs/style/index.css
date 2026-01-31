@@ -1,311 +1,252 @@
-*{ 
-    font-family:SatoshiBold;
+:root {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --accent: #ffb86b;
+    --muted: #9aa5b1
 }
 
-header{
-    width: 100%;
-    background-color: #0D1C26;
-    color: white;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #e6eef6;
+    background: linear-gradient(180deg, #071226 0%, #0b1b2b 60%)
+}
+
+.wrap {
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem
 }
 
-h1{
-    font-size: 45px;
+.card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 2.25rem;
+    border-radius: 14px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1.5rem;
+    align-items: center
 }
 
-h3{
-    font-size: 20px;
-    font-family:SatoshiRegular;
+.left h1 {
+    margin: 0;
+    font-size: 2.25rem;
+    letter-spacing: -1px
 }
 
-.redesSociais{
-    color: white;
+.left h2 {
+    margin: .3rem 0;
+    color: var(--muted);
+    font-weight: 500
 }
 
-.github:hover, .instagram:hover, .linkedln:hover{
-    transform: translateY(-10px);
+.left p {
+    color: var(--muted);
+    margin-top: 1rem;
+    font-size: 1rem
 }
 
-.github:hover{
-    color: rgb(42, 42, 81);
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .35rem .7rem;
+    border-radius: 999px;
+    background: rgba(255, 184, 107, 0.12);
+    color: var(--accent);
+    font-weight: 600
 }
 
-.instagram:hover{
-    color: #dd2a7b;
+/* profile & redes */
+.profile-inline {
+    display: flex;
+    gap: 1rem;
+    align-items: center
 }
 
-.linkedln:hover{
-    color: #0e76a8;
+.profile-pic-wrap {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.02) inset;
+    background-color: transparent
 }
 
-.projeto{
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 0;
+    background-color: transparent
+}
+
+.conteudo h1 {
+    margin: 0;
+    font-size: 1.25rem
+}
+
+.conteudo h3 {
+    margin: .25rem 0;
+    color: var(--muted);
+    font-weight: 500
+}
+
+.redesSociais {
+    display: flex;
+    gap: .6rem;
+    margin-top: .4rem
+}
+
+.redesSociais a {
+    color: var(--muted);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: .35rem;
+    border-radius: 8px
+}
+
+.redesSociais iconify-icon {
+    font-size: 22px;
+    color: var(--muted);
+    transition: filter .18s ease, color .18s ease
+}
+
+/* hover: clarear ícones um pouco quando o mouse passar */
+.redesSociais a:hover iconify-icon,
+.redesSociais iconify-icon:hover {
+    filter: brightness(1.25);
+    color: #ffffff
+}
+
+.construction {
     display: flex;
     flex-direction: column;
-    gap: 7px;
-    padding: 5px;
-    transition: 0.5s all ease-in-out;
-}
-
-.projeto:hover{
-    transform: scale(1.03);
-    color: #58a6ff;
-}
-
-.BoxPortfolio{
-    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: auto;
-    margin-top: -15px;
-    
+    gap: .6rem
 }
 
-.BoxPortfolio h3{
-    background-color: #6B98BF;
-    padding: 5px;
-    border-style: solid;
-    border-radius: 7px;
-    border-width: 2px;
-    border-color: #1F3140;
+.crane {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #15263a, #0b1b2b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 -6px 20px rgba(0, 0, 0, 0.4);
+    position: relative
 }
 
-.mid{
-    background-color: #b9b9b9;
-    width: 100%;
-    position:absolute;
-    top:150px;
+.crane::after {
+    content: '🏗️';
+    font-size: 48px;
+    animation: float 2.6s ease-in-out infinite
 }
 
-.botton{
-    background-color: #b9b9b9;
-    margin-top: 15px;
-    height: 100%;
-}
-
-
-.projeto{
-    margin: 5px;
-    color: white;
-    background-color: rgb(31, 49, 64);
-    border-top: 4px solid #fdfac3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.dados{
-    margin: 5px;
-    color: white;
-    background-color: rgb(31, 49, 64);
-    border-top: 4px solid #fdfac3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: min-content;
-}
-
-ul{
-    list-style:none;
-    padding-left:0;
-}
-
-li{
-    margin-left: 20px;
-}
-
-.botton h2{
-    font-size: 25px;
-}
-
-.botton h3{
-    font-size: 20px;
-    font-family:SatoshiRegular;
-}
-
-.botton h4{
-    font-size: 15px;
-    font-family:SatoshiRegular;
-}
-
-.botton li{
-    font-size: 20px;
-    font-family:SatoshiRegular;
-}
-
-.tecnologias{
-    margin: 10px;
-}
-
-/* mobile */
-@media (max-width: 615px) {        
-
-    .profile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 10px;
-    }
-     
-    .image{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@keyframes float {
+    0% {
+        transform: translateY(0)
     }
 
-    .eu{
-        width: 250px;
-        margin: 10px;
-        border-radius: 160px;
-        align-items: center;
-    }
-    
-    .conteudo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center;
-        height: 100%;
-        width: 100%;
-        gap: 10px;
-        padding-bottom: 5px;
-    }
-    
-    .redesSociais{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-        gap: 10px;
+    50% {
+        transform: translateY(-8px)
     }
 
-    .github{
-        font-size: 38px;
-        color: white
-    }
-
-    .instagram{
-        font-size: 35px;
-        color: white
-    }
-
-    .linkedln{
-        font-size: 38px;
-        color: white
-    }
-    
-    h1{
-        margin: 5px;
-    }
-
-    .mid{
-        margin-top: 305px;
-    }
-
-    .botton{
-        margin-top: 17px;
-        display: grid;
-        grid-template-rows: min-content;
-    }
-
-    .portfolio{
-        order: 2;
-        width: 100%;
-    }
-
-    .dados{
-        order: 1;
+    100% {
+        transform: translateY(0)
     }
 }
 
+.right {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    text-align: center
+}
 
-/* Desktop */
-@media (min-width: 615px) {        
- 
-    .mid{
-        margin-top: 70px;
-    }
+.right p {
+    color: var(--muted);
+    margin: .6rem 0
+}
 
-    .profile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 10px;
-    }
+.sparkles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none
+}
 
-    .image{
-        /* display: flex;
-        justify-content: center; */
-    }
-    
-    .eu{
-        width: 200px;
-        margin: 10px;
-        border-radius: 100px;
-        align-items: center;
+@media (max-width:820px) {
+    .wrap {
+        /* reduzir espaçamento nas telas pequenas para evitar conteúdo "apertado" */
+        padding: 1.25rem;
     }
 
-    .description{
-        gap: 10px;
-    }
-    
-    .conteudo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-        width: 100%;
-        gap: 15px;
-        padding-bottom: 10px;
-        
-    }
-    
-    .redesSociais{
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-    }
-    
-    .github{
-        font-size: 30px;
-        color: white;
-        transition: 1s ease-in-out;
+    .card {
+        grid-template-columns: 1fr;
+        /* menos padding interno para caber melhor em telas estreitas */
+        padding: 1.25rem;
+        gap: 1rem;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
-    .instagram{
-        font-size: 29px;
-        color: white;
-        transition: 1s ease-in-out;
+    .crane {
+        width: 96px;
+        height: 96px
     }
 
-    .linkedln{
-        font-size: 32px;
-        color: white;
-        transition: 1s ease-in-out;
+    /* diminuir elementos de perfil para não empurrar conteúdo */
+    .profile-pic-wrap {
+        width: 72px;
+        height: 72px;
+        border-radius: 10px;
     }
 
-    .portfolio{
-        display: grid;
-        height: min-content;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: min-content;
+    .conteudo h1 {
+        font-size: 1.05rem;
     }
 
-    .botton{
-        display: flex;
-        flex-direction: row;
+    .left h1 {
+        font-size: 1.5rem;
     }
 
-    .portfolio{
-        width: 66.66%;
-    }
-    
-    .projeto{
-        height: 100%;
+    .left h2 {
+        font-size: 1rem;
     }
 
-    .dados{
-        width: 33.33%;
+    .left p {
+        font-size: 0.95rem;
     }
 
+    .redesSociais iconify-icon {
+        font-size: 20px;
+    }
+
+    .right {
+        padding: 0.75rem;
+    }
+
+    /* evitar que textos longos quebrem o layout */
+    .left h1,
+    .conteudo h1,
+    .left p,
+    .badge {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
 }
